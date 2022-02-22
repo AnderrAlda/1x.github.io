@@ -54,7 +54,7 @@
 
 <div class="content">
     <h1>Ander Alda</h1>
-    <p>Hola, soy un estudiante de desarrollo software.</p>
+    <p>Hola, soy <span class="textoescrito"></span></p>
     <a href="#"><button>descubre mas</button></a>
 </div>
 
@@ -342,9 +342,7 @@
 
 <div class="row">
 
-    <div class="image">
-        <img src="images/pexels-pixabay-39866.jpg" alt="">
-    </div>
+   
 
     <div class="form-container">
         <form action="">
@@ -380,11 +378,24 @@
 <!-- JQ LIBRERIA -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-
+<!-- typed.js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 <!-- JQ -->
 <script src="js/main.js"></script>
 
+
+
+<script>
+
+var typed = new Typed('.textoescrito', {
+  // Waits 1000ms after typing "First"
+  strings: ['desarrollador blockchain.', 'desarrolador web.'],
+  typeSpeed:220,
+  loop: true
+});
+
+</script>
     
 </body>
 </html>
